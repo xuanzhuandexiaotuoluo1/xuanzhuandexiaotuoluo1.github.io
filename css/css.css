@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*这是内容的css*/
+		*{padding: 0px;
+		margin: 0px;
+		box-sizing: border-box;
+		}
+/*为折线图设置背景色*/
+       #container{background:rgba(255,255,255,.5);}	
+/*给Body添加格式*/
+	body{width: 100vw;
+			height: 100vh;
+			perspective: 100px;
+			transform-style: preserve-3d;
+			overflow-y: auto;
+		}
+		html{overflow: hidden
+		}
+/*给数据图大盒子添加格式*/
+		main{display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-top: 100vh;
+		}
+		/*.form{width: 100vw;
+			height: 100vh;
+			scroll-snap-type: y mandatory;
+			overflow: scroll;
+}*/
+/*给每个数据图小盒子设置格式*/
+		.item{position: relative;
+			/*display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;*/
+			width: 100vw;
+			height: 80vh;
+			overflow: hidden;
+			margin-top: 30vh;
+			background:rgba(51,108,186,.3);
+			/*scroll-sanp-align:start;*/
+			
+			}
+/*给图片设置格式*/
+		.image{position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			transform: translateZ(-50px) scale(2.4);
+			}
+/*给图片设置格式*/
+		.image img{display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+/*给图片添加遮罩*/
+		image::before{
+			content:"";
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color:rgba(0,0,0,.2);
+			transition: all 0.3s ease;
+		}
+/*给鼠标经过数据图盒子时设置颜色*/
+		.item:hover ,image::before{background-color:rgba(255,255,255,.1) ;
+		}
+/*给对话的图设置格式*/
+		.conversation{
+					width: 60%;
+					height:90%;
+					float: left;
+				}
+/*给对话的图设置格式*/
+		.talk{max-width: 75%;
+		
+			margin-top: 3.5%;
+			margin-left: 8%;
+		}
+/*给段落设置格式*/
+		p{	display: block;
+			text-indent: 2em;
+			font-family: MicrosoftYahe;
+			line-height: 2em;
+			font-size: 24px;
+			margin-top:0 auto;
+			}
+/*给文本设置格式*/
+		.text{width: 35%;
+			height: 80%;
+			float: right;
+			/*background-color: #A95E5F;*/
+			margin-right: 5%;
+			margin-top: 10%;	
+		}
+		.texttwo{width: 30%;
+			height: 80%;
+			float: left;
+			/*background-color: #A95E5F;*/
+			margin-left: 2.5%;
+			margin-top: 10%;
+			}
+		/*给贫穷人口图设置格式*/
+		.thepoor{background:rgba(225,225,225,.4);
+					display: block;
+					width: 60%;
+					height: 90%;
+					float: right;
+					margin-top: 2%;
+					margin-right: 5%;
+		}
+		.animation{max-width: 80%;
+	
+			margin: 8% 10%;
+		}
+/*给文本设置格式*/
+		.p{width: 80%;
+			margin: 0 auto;
+		}
+/*给比例图设置格式*/
+		.ration{
+			width: 60%;
+			height:90%;
+			float: left;
+			margin-top: 5%;
+			
+}
+	.people{max-width: 75%;
+			/*background:rgba(225,225,225,.4)*/;
+			margin-top: 3.5%;
+			margin-left: 8%;
+		}
+/*给文本设置格式*/
+	.textthree{width: 70%;
+			height: 80%;
+			float: right;
+			/*background-color: #A95E5F;*/
+			margin-right: 10%;
+		margin-top: 4%;}
+		
+/*	为页脚设置格式*/
+		.foot{width: 100%;
+			height: 110px;
+			background: rgba(0,102,203,1);
+			margin-top: 40px;
+			padding-top: 40px;
+			color: white;
+			text-align:center;}
+		/*这是内容的css*/	
