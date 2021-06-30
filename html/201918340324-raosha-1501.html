@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<title>易地搬迁扶贫</title>
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="js/echarts-js.js"></script>
+</head>
+
+<body>
+	 <div class="navigation">
+			<div class="tittle">聚焦脱贫攻坚战</div>
+	<nav>
+    <!---导航栏相关内容-->                                         
+	<ul>
+		<li><a href="201918340322-qinnian-1501.html">产业扶贫</a></li>
+		<li><a href="201918340326-sunshanshan-1502.html">转移就业扶贫</a></li>
+		<li><a href="201918340324-raosha-1501.html">易地搬迁扶贫</a></li>
+		<li><a href="201918340326-sunshanshan-1501.html">教育扶贫</a></li>
+		<li><a href="201906240226-yangjing-1501.html">生态扶贫</a></li>
+		<li><a href="../index.html">首页</a></li>
+	</ul>
+	</nav>
+		</div>
+	<header id="top">
+		<h1>关键词:</h1>
+		<h2 class="second">易地搬迁扶贫</h2>
+		<h3>Key words:</h3>
+		<h3 class="last">Relocation and poverty alleviation</h3>
+	</header>
+
+	<main>
+	<article>
+		<div class="title">
+		<p>《全国“十三五”易地扶贫搬迁规划》</p>
+		</div>
+		<p>由国家发改委在2016年9月22日对外发布，《全国“十三五”易地扶贫搬迁规划》以精准扶贫、精准脱贫为统领，坚持搬迁与脱贫“两手抓”，明确了“十三五”时期推进易地扶贫搬迁的指导思想、目标任务、资金来源、资金运作模式、保障措施等，是各地推进易地扶贫搬迁工作的行动纲领。为促进搬迁群众稳定脱贫，《全国“十三五”易地扶贫搬迁规划》坚持把贫困搬迁户的脱贫工作贯穿于规划选址、搬迁安置、后续发展全过程，立足安置区资源禀赋，依据不同搬迁安置模式，支持发展特色农牧业、劳务经济、现代服务业以及探索资产收益扶贫等方式，确保搬迁群众实现稳定脱贫。</p>
+		<p>经国务院批准，国家发展改革委印发《全国“十三五”易地扶贫搬迁规划》（以下简称《规划》），计划五年内对近1000万建档立卡贫困人口实施易地扶贫搬迁，着力解决居住在“一方水土养不起一方人”地区贫困人口的脱贫问题。《规划》以精准扶贫、精准脱贫为统领，坚持搬迁与脱贫“两手抓”，明确了“十三五”时期推进易地扶贫搬迁的指导思想、目标任务、资金来源、资金运作模式、保障措施等，是各地推进易地扶贫搬迁工作的行动纲领。</p>
+	</article>
+	</main>
+	<section class="secondbackground">
+		<h2>人口迁出区域与人口安置占比</h2>
+	</section>
+		<main>
+		<article>
+			
+			<p>迁出区域范围涉及22个省的约1400个县。从迁出区域看，主要包括四类地区：一是深山石山、边远高寒、荒漠化和水土流失严重，且水土、光热条件难以满足日常生活生产需要，不具备基本发展条件的地区，这类因资源承载力严重不足需要搬迁的建档立卡贫困人口316万人，占建档立卡搬迁人口总规模的32.2%。</p>
+			<p>二是《国家主体功能区规划》中的禁止开发区或限制开发区，这些地区需要搬迁的建档立卡贫困人口157万人，占建档立卡搬迁人口总规模的16%；</p>
+			<p>三是交通、水利、电力、通信等基础设施，以及教育、医疗卫生等基本公共服务设施十分薄弱，工程措施解决难度大、建设和运行成本高的地区，这类地区需要搬迁的建档立卡贫困人口340万人，占建档立卡搬迁人口总规模的34.7%。</p>
+			<p>四是地方病严重、地质灾害频发，这些地区需要搬迁的建档立卡贫困人口114万人，占建档立卡搬迁人口总规模的11.6%。从地区分布看，西部12省（区、市）建档立卡搬迁人口约664万人，占67.7%；中部6省建档立卡搬迁人口约296万人，占30.2%；东部河北、吉林、山东、福建4省建档立卡搬迁人口约21万人，占2.1%。</p>
+			<p>考虑到迁出区的自然环境和发展条件具有同质性，还有部分生活在同一迁出地的非建档立卡人口需要实施同步搬迁，各地结合自身实际计划安排实施同步搬迁人口600多万人。同步搬迁人口可与建档立卡人口共享安置区基础设施和基本公共服务设施，但不享受中央相关住房建设补助资金。</p>
+	<div class="picture">
+			<img src="img/where.png" alt="">
+	</div>
+		</article>
+	</main>
+	
+	<main>
+		<article>	
+			<div>
+				<div>
+				<div class="qc">
+						<p>地区分布</p>
+				</div>
+
+
+				<div id="part" class="area"></div>
+					<script type="text/javascript">
+					var chartDom = document.getElementById('part');
+					var myChart = echarts.init(chartDom);
+						var option;
+
+						option = {
+							tooltip: {
+								trigger: 'item',
+								formatter: "{a} <br/>{b}({d}%)"
+							},
+							legend: {
+								top: '5%',
+								left: 'center'
+							},
+							series: [
+								{
+									name: '地区分布',
+									type: 'pie',
+									radius: ['40%', '70%'],
+									avoidLabelOverlap: false,
+									itemStyle: {
+										borderRadius: 10,
+										borderColor: '#fff',
+										borderWidth: 2
+									},
+									label: {
+										show: false,
+										position: 'center'
+									},
+									emphasis: {
+										label: {
+											show: true,
+											fontSize: '40',
+											fontWeight: 'bold'
+										}
+									},
+									labelLine: {
+										show: false
+									},
+									data: [
+										{value: 67.7, name: '西部地区'},
+										{value: 30.2, name: '中部地区'},
+										{value: 2.1, name: '东部地区'},
+									]
+								}
+							]
+						};
+						option && myChart.setOption(option);
+						</script>
+					</div>
+			<div>
+				<div class="gove">
+						<p>政策区域 </p>
+				</div>
+				<div id="gover" class="area"></div>
+					<script type="text/javascript">
+					var chartDom = document.getElementById('gover');
+					var myChart = echarts.init(chartDom);
+						var option;
+							option = {
+							tooltip: {
+								trigger: 'item',
+								formatter: "{a} <br/>{b}({d}%)"
+							},
+							legend: {
+								top: '5%',
+								left: 'center'
+							},
+							series: [
+								{
+									name: '政策区域',
+									type: 'pie',
+									radius: ['40%', '70%'],
+									avoidLabelOverlap: false,
+									itemStyle: {
+										borderRadius: 10,
+										borderColor: '#fff',
+										borderWidth: 2
+									},
+									label: {
+										show: false,
+										position: 'center'
+									},
+									emphasis: {
+										label: {
+											show: true,
+											fontSize: '14',
+											fontWeight: 'bold'
+										}
+									},
+									labelLine: {
+										show: false
+									},
+									data: [
+										{value: 72, name: '片区县和国家扶贫开发重点县'},
+										{value: 12, name: '省级扶贫开发重点县'},
+										{value: 16, name: '其他区县'},
+									]
+								}
+							]
+						};
+						option && myChart.setOption(option);
+						</script>
+				</div>
+		</div>
+				<div>
+				<div class="qc">
+						<p>安置人口占比</p>
+				</div>
+				<div id="where" class="area"></div>
+					<script type="text/javascript">
+					var chartDom = document.getElementById('where');
+					var myChart = echarts.init(chartDom);
+						var option;
+
+						option = {
+							tooltip: {
+								trigger: 'item',
+								formatter: "{a} <br/>{b}({d}%)"
+							},
+							legend: {
+								top: '5%',
+								left: 'center'
+							},
+							series: [
+								{
+									name: '安置人口占比',
+									type: 'pie',
+									radius: ['40%', '70%'],
+									avoidLabelOverlap: false,
+									itemStyle: {
+										borderRadius: 10,
+										borderColor: '#fff',
+										borderWidth: 2
+									},
+									label: {
+										show: false,
+										position: 'center'
+									},
+									emphasis: {
+										label: {
+											show: true,
+											fontSize: '20',
+											fontWeight: 'bold'
+										}
+									},
+									labelLine: {
+										show: false
+									},
+									data: [
+										{value: 76.4, name: '集中安置人口占比'},
+										{value: 23.6, name: '分散安置人口占比'},
+									]
+								}
+							]
+						};
+						option && myChart.setOption(option);
+						</script>
+					</div>
+				</article>
+			</main>
+
+		
+	<main>
+		<article>
+		<div class="title">
+		<p>经济来源</p>
+		</div>
+			<p>规划》根据各地建设总规模、平均工程造价等数据测算，实施981万建档立卡贫困人口易地搬迁所需投资约6000亿元，加上同步搬迁人口住房建设投资，“十三五”时期易地扶贫搬迁工程规划总投资约9500亿元。</p>
+			<p>一是安排中央预算内投资约800亿元。2016年已下达中央预算内投资193.6亿元。二是安排专项建设基金总规模500亿元。目前已切块下达相关省份，国家开发银行、中国农业发展银行正在分批注入省级投融资主体。三是安排地方政府债务资金约1000亿元。目前各地已发行635亿元，支付到项目181.6亿元。四是安排低成本长期贷款总规模3400多亿元。由国家开发银行、中国农业发展银行负责投放，中央财政对贷款给予适当贴息。五是由建档立卡搬迁人口自筹约300亿元。目的是体现扶贫对象的主体意识和责任意识，引导他们积极参与新家园建设，通过自力更生、艰苦奋斗，实现光荣脱贫。</p>
+			<p>此外，与建档立卡贫困人口实施同步搬迁的600多万人住房建设资金，以及迁出区土地整治、生态修复等其他投资共计约3500亿元，主要由各级地方政府统筹本级财力和相关渠道资金、动员搬迁群众自筹予以解决。</p>
+		<div id="em" class="area-first"></div>
+		<script type="text/javascript">
+				var chartDom = document.getElementById('em');
+				var myChart = echarts.init(chartDom);
+				var option;
+
+				option = {
+					     tooltip: {
+							  trigger: 'item',
+						 formatter: '{c}亿'},
+		
+					series: [{
+						type: 'treemap',
+						
+						data: [{
+							name: '搬迁人口易地搬迁投资',            
+							value: 6000,
+							children: [{
+								name: '安排中央预算内投资',       
+								value: 800
+							}, {
+								name: '安排专项建设基金',       
+								value: 500
+							},{
+								name: '安排地方政府债务资金',       
+								value: 1000
+							},{
+								name: '安排低成本长期贷款',       
+								value: 3400
+							},{
+								name: '由建档立卡搬迁人口自筹',       
+								value: 300
+							}]
+						}, {
+							name: '同步搬迁人口住房建设投资',            
+							value: 3500,
+						}]
+					}]
+				};
+
+				option && myChart.setOption(option);
+			</script>
+		</article>
+	</main>
+		
+		<main>
+			<article>
+				<div class="title">
+					<p>脱贫路径</p>
+				</div>
+				<p>《规划》还提出了促进搬迁人口脱贫的五条路径：一是发展特色农林业脱贫一批，通过采取补贴补助、技术服务、信息发布、示范带动等扶持政策措施，鼓励引导搬迁农户面向市场需求，通过发展特色种植、高效养殖、林下经济、设施农业、休闲农业等产业脱贫。二是发展劳务经济脱贫一批，将发展劳务经济作为持续增加收入的主要途径，加强搬迁人口就业技能培训，努力拓宽就业创业渠道，加强就业指导和劳务输出工作，促进搬迁就业脱贫。三是发展现代服务业脱贫一批，扶持搬迁贫困人口从事农副产品营销、餐饮、家政、仓储、配送等服务业，多渠道增加收入促进脱贫。四是资产收益扶贫脱贫一批，探索“易地扶贫搬迁配套设施资产变股权、搬迁对象变股民”的方式，通过将资产量化到贫困人口，增加其财产性收入，带动脱贫。五是社会保障兜底脱贫一批，对符合相关条件的搬迁对象纳入社会保障兜底脱贫范围，通过政策兜底脱贫。</p>
+				<div class="picture">
+				<img src="img/cl.png" alt="">
+				</div>
+			</article>
+		</main>
+	
+	<main>
+	<article>
+		<div class="title">
+		<p>易地搬迁扶贫取得的成果</p>
+		</div>
+		
+		<p>截至2020年8月17日，全国已建成集中安置区约3.5万个，建成安置住房266万多套。“十三五”易地扶贫搬迁住房建设任务和配套设施扫尾工程已全部完成，建档立卡贫困搬迁群众基本实现全部入住。</p>
+	</article>
+	</main>
+	
+	<footer class="foot">
+		<p>back to top</p>
+		<span><a href="#top"></a></span>
+		<p class="lastword">
+		Copyright  2021 版权所有 好好学习小组 <br>   
+		管理登陆Tel：0817--2568536(组办)0817--2568536(传真) <br>
+		好好学习小组的邮箱：2560389980@qq.com
+		</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+	<meta charset="utf-8">
+		<title>生态扶贫</title>
+	    <link href="css/style4.css" rel="stylesheet" type="text/css">
+		<script src="js/echarts-js.js"></script>
+	</head>
+   <body>
+	 <div class="navigation">
+		<div class="tittle">聚焦脱贫攻坚战</div>
+            <nav>
+	           <ul>
+					<li><a href="201918340322-qinnian-1501.html">产业扶贫</a></li>
+					<li><a href="201918340326-sunshanshan-1502.html">转移就业扶贫</a></li>
+					<li><a href="201918340324-raosha-1501.html">易地搬迁扶贫</a></li>
+					<li><a href="201918340326-sunshanshan-1501.html">教育扶贫</a></li>
+					<li><a href="201906240226-yangjing-1501.html">生态扶贫</a></li>
+				    <li><a href="../index.html">首页</a></li>
+	          </ul>
+           </nav>
+	  </div>
+	 <!---这是视差滚动图片上的文字相关内容-->
+	  <header id="top">
+			<h1 class="background">关键词：</h1>
+			<h2 class="second">生态扶贫</h2>
+			<h3>Key words:</h3>
+			<h3 class="last">The ecological poverty alleviation</h3>
+	  </header>
+	 <!---这是网页对生态扶贫总体介绍文章的相关内容-->
+		 <main>
+		    <article class="text">
+				<p>生态扶贫是将生态保护与扶贫开发相结合的一种扶贫工作模式。我国林地、草原、湿地、荒漠化土地占国土面积70%以上，分布着全国60%的贫困人口，这些地区是生态建设的主战场，也是脱贫攻坚的主战场。国家林业和草原局会同国家发展改革委、财政部、生态环境部、自然资源部、农业农村部、国务院扶贫办等部门充分挖掘行业优势，将生态文明建设与贫困群众脱贫增收同步谋划、同步推进、同步落实。出台一系列政策、明确工作思路，通过规划引领、资金项目支持、督查检查指导、人才科技支撑等组合拳，形成生态扶贫工作体系。</p>
+				<p>通过实施生态补偿、国土绿化、生态产业和生态环保等措施，激发贫困人口内生动力，吸纳贫困人口就地参与劳务，促进增收脱贫，实现了一个战场打赢脱贫攻坚和生态保护两场战役。帮助脱贫方式主要有通过参与工程建设获取劳务报酬；通过生态公益性岗位得到稳定的工资性收入；通过生态产业发展增加经营性收入和财产性收入；通过生态保护补偿等政策增加转移性收入。</p>
+				<p>目的指在绿色发展理念指导下，将精准扶贫与生态保护有机结合起来，统筹经济效益、社会效益、生态效益，以实现贫困地区可持续发展为导向的一种绿色扶贫理念和方式。近年来，以习近平同志为核心的党中央把生态保护放在优先位置，创新生态扶贫机制，坚持因地制宜、绿色发展，在贫困地区探索出一条脱贫攻坚与生态文明建设“双赢”的新路。</p>
+		    </article>
+		</main>
+	<section class="secondbackground">
+		<h2>生态扶贫主要途径</h2>
+	</section>
+        <main> 
+           <article>
+			<div class="topic">
+	       		<p>环境友好型发展产业</p>
+		 	</div> 
+		   <p>发展环境友好型特色产业,将生态保护放在了更加突出的位置。实行“面上保护、点上开发”,进一步凸显了绿色发展、低碳发展、循环发展的生态价值观。我们讲的生态,包括生态产品、生态环境、生态灾害治理等。就生态产品而言,包括有形和无形的产品。有形产品如林产品、中药材、林下经济产品等,而无形产品则体现为良好的生态环境,以及构成生态环境的森林生态系统、湿地生态系统、荒漠生态系统以及生物多样性等。根据测算,每增长1立方米林木蓄积量,就会增加0.63立方米的新鲜空气,因此发展环境友好型特色产业,其无形的生态价值最可贵。既要绿水青山,也要金山银山,因为绿水青山就是“金山银山”。探索适合当地生态环境条件的具有较高经济回报的产业，包括林果种植，养殖。</p>
+           </article>
+	   </main>
+   <div id="part" class="partHuanjing">
+		<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('part'));
+			var option;
+			option = {
+            tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow',
+                label: {
+                    show: true
+                }
+            }
+        },
+        toolbox: {
+            show: true,
+            feature: {
+                mark: {show: true},
+                dataView: {show: true, readOnly: false},
+                magicType: {show: true, type: ['line', 'bar']},
+                restore: {show: true},
+                saveAsImage: {show: true}
+            }
+        },
+        calculable: true,
+        legend: {
+            data: [ '果林种植'],
+           
+        },
+        grid: {
+            top: '12%',
+            left: '1%',
+            right: '10%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                data: ['1995', '1996', '1997','1998','1999','2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value',
+                name: '单位：千公顷',
+             
+            }
+        ],
+        dataZoom: [
+            {
+                show: true,
+                start: 94,
+                end: 100
+            },
+            {
+                type: 'inside',
+                start: 94,
+                end: 100
+            },
+            {
+                show: true,
+                yAxisIndex: 0,
+                filterMode: 'empty',
+                width: 30,
+                height: '80%',
+                showDataShadow: false,
+                left: '93%'
+            }
+        ],
+        series: [
+            {
+                name: '果林种植',
+                type: 'bar',
+                data: [8098,8553,8648,8535,8667,8932,9042,9097,9436,9768,10034,10122,10471,10734,11139,11543,11830,12139,12374,12750,15376,17250]
+            },
+ 
+                ]
+    };
+
+		myChart.setOption(option);
+		</script>
+	 </div>
+	   <main>
+         <article>
+		 <div class="data">
+			<p>数据来源：新华网</p>
+		 </div>
+		 <div class="topic">
+	      	<p>生态修复工程</p>
+		 </div>
+	     <p>生态修复(ecological remediation)是在生态学原理指导下，以生物修复为基础，结合各种物理修复、化学修复以及工程技术措施，通过优化组合，使之达到最佳效果和最低耗费的一种综合的修复污染环境的方法。生态修复的顺利施行，需要生态学、物理学、化学、植物学、微生物学、分子生物学、栽培学和环境工程等多学科的参与。对受损生态系统的修复与维护涉及生态稳定性、生态可塑性及稳态转化等多种生态学理论。</p>
+	     <p>严格遵循循环再生．和谐共存、整体优化、区域分异等生态学原理。循环再生原理：生态系统通过生物成分，一方面利用非生物成分不断地合成新的物质，一方面又把合成物质降解为原来的简单物质，并归还到非生物组分中。如此循环往复，进行着不停顿的新陈代谢作用。</p>
+		 <p>和谐共存原理：在生态修复系统中，由于循环和再生的需要，各种修复植物与微生物种群之间、各种修复植物与动物种群之间、各种修复植物之间、各种微生物之间和生物与处理系 统环境之间相互作用，和谐共存，修复植物给根系微生物提供生态位和适宜的营养条件。整体优化原理：生态修复技术涉及点源控制、污染物阻隔、预处理工程、修复生物选择和修复后土壤及水的再利用等基本过程，它们环环相扣，相互不可缺少。区域分异原理：不同的地理区域，甚至同一地理区域的不同地段，由于气温、地质条件、土壤类型、水文过程以及植物、动物和微生物种群差异很大，导致污染物质在迁移、转化和降 解等生态行为上具有明显的区域分异。</p>
+		 <p>主要工程有退耕还草工程，退牧还草工程，京津风沙源治理工程，天然林资源保护工程，三北等防护林体系建设工程,水土保持重点工程，石漠化综合治理工程，湿地保护与恢复工程。</p> 
+	     </article>
+	  </main>
+    <div id="part1" class="partXiufu">
+	  <script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('part1'));
+		var option;
+    option = {
+		legend:{top:'bottom'},
+    	toolbox: {
+        show: true,
+        feature: {
+            mark: {show: true},
+            dataView: {show: true, readOnly: false},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    series: [
+        {
+            name: '面积模式',
+            type: 'pie',
+            radius: [50, 250],
+            center: ['50%', '50%'],
+            roseType: 'area',
+            itemStyle: {
+                borderRadius: 8
+            },
+            data: [
+                {value: 40, name: '退耕还草工程'},
+                {value: 38, name: '退牧还草工程'},
+                {value: 32, name: '京津风沙源治理工程'},
+                {value: 30, name: '天然林资源保护工程'},
+                {value: 28, name: '三北等防护林体系建设工程'},
+                {value: 26, name: '水土保持重点工程'},
+                {value: 22, name: '石漠化综合治理工程'},
+                {value: 18, name: '湿地保护与恢复工程'}
+            ]
+        }
+    ]
+};
+
+    option && myChart.setOption(option);
+    </script>
+    </div>
+	  <!---这是网页对生态保护工程介绍文章的相关内容-->
+     <main>
+        <article>
+		<div class="data">
+			<p>数据来源：新华网</p>
+		 </div>	
+		<div class="topic">
+	      <p>生态保护工程</p>
+	    </div>
+			<p>生态保护工程是指开展扶贫以来，党中央、国务院高度重视生态环境保护与建设工作，采取了一系列战略措施，加大了生态环境保护与建设力度，一些重点地区的生态环境得到了有效保护和改善。</p>
+			<p>青山就是金山银山,是习近平反复强调的生态文明建设理念。牢固树立“绿水青山就是金山银山”的理念,就是把生态保护放在优先位置,实现绿色发展。扶贫开发不能以牺牲生态为代价,必须探索生态脱贫新路子,让贫困人口从生态建设与修复中得到更多实惠。</p>
+			<p>生态保护扶贫包括两大核心思想:一是在贫困地区实施可持续型、环境友好型扶贫开发项目,最大限度地帮助地区经济实现发展,做到对生态环境不伤害、不破坏。二是将生态环境看成是一种能够得到有效利用的扶贫资源加以开发,从而实现当地经济发展、人民生活水平提高和生态环境保护的高度统一。</p>
+			<p>2016年以来，累计安排中央财政投资资金140亿元，选聘生态护林员100万名，带动300多万贫困人口增收和脱贫。国家林业和草原局、生态环境部等有关部门进一步完善天然林保护、森林生态效益补偿、草原奖补和生态修复等政策，增加贫困人口收入。继续推进国土绿化扶贫，加大贫困地区退耕还林（草）建设力度，林草重大工程项目向扶贫造林（种草）专业合作社倾斜。</p>
+			<p>继续支持贫困地区大力发展绿色产业及加工业。继续推动生态保护修复工程，积极创新和完善绿色产业带动贫困户和利益联结机制，最大限度地覆盖贫困村和贫困户。通过大力实施重要生态系统保护和修复重大工程，全面加强生态保护和修复工作，全国森林、草原、荒漠、河湖、湿地、海洋等自然生态系统状况实现根本好转，生态系统质量明显改善，优质生态产品供给能力基本满足人民群众需求，人与自然和谐共生的美丽画卷基本绘就。</p>
+	    </article>
+	 </main>
+   <div id="part2" class="partBaohu">
+		<script type="text/javascript">
+        var chartDom = document.getElementById('part2');
+        var myChart = echarts.init(chartDom);
+        var option;
+option = {
+    xAxis: {
+        type: 'category',
+        data: ['新增护林员', '新增林草资源', '贫困人口参与生态工程', '森林旅游年户均增']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [110.2, 300, 160, 147.5],
+        type: 'bar',
+        showBackground: true,
+        backgroundStyle: {
+            color: 'rgba(180, 180, 180, 0.2)'
+        }
+    }]
+};
+
+option && myChart.setOption(option);
+
+    </script>
+	</div>
+	  <!---这是网页对生态旅游项目介绍文章的相关内容-->
+	  <main>
+      <article>
+		 <div class="datatwo">
+			<p>数据来源：新华网</p>
+		 </div>
+	  <div class="topic">
+	    <p>生态旅游项目</p>
+	  </div>
+	  <p>1993年国际生态旅游协会把其定义为：具有保护自然环境和维护当地人民生活双重责任的旅游活动。生态旅游的内涵更强调的是对自然景观的保护，是可持续发展的旅游。</p>
+	  <p>生态旅游是以旅游度假为宗旨，以村庄野外为空间，以人文无干扰、生态无破坏、以游居和野行为特色的村野旅游形式。</p>
+	  <p>最新定义生态旅游为以有特色的生态环境为主要景观的旅游。是指以可持续发展为理念，以保护生态环境为前提，以统筹人与自然和谐发展为准则，并依托良好的自然生态环境和独特的人文生态系统，采取生态友好方式，开展的生态体验、生态教育、生态认知并获得心身愉悦的旅游方式。</p> 
+	  <p>2019年，全国乡村旅游总人次为30.9亿次，乡村旅游总收入1.81万亿元2020年第二季度，乡村旅游环比增长达148.8%；7月至8月，乡村旅游总人数、总收入均已恢复往年同期的九成多，从业人员数量基本达到去年同期水平。从2015年至今，国务院、国家旅游局、国家发展改革委、国土资源部等部门陆续发布或联合发布了一系列的乡村旅游扶贫政策，涵盖乡村旅游、休闲农业、田园综合体以及农业PPP等诸多方面，为乡村扶贫旅游提供了支持和保障。</p>
+	  <p>研究显示，生态旅游助力脱贫主要有四条途径:</p>
+	  <p>1.通过就业实现增收，占受益贫困人口的18%，年户均增收6162元;</p>
+	  <p>2.通过开展个体经营实现增收，占受益贫困人口的12%，年户均增收4547元;</p>
+	  <p>3.通过发展种养殖实现增收，占受益贫困人口的65%，年户均增收2394元;</p>
+	  <p>4.通过租赁、入股经营等形式实现增收，占受益贫困人口的5%，年户均增收4072元。</p>
+	  <p>生态旅游旅游带动脱贫是生态产业扶贫的一个生动写照。</p>
+	  </article>
+	  </main>
+	<div id="part3" class="partLvyou">
+	<script type="text/javascript">
+var chartDom = document.getElementById('part3');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+    tooltip: {
+        trigger: 'item'
+    },
+    legend: {
+        top: '5%',
+        left: 'center'
+    },
+    series: [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius: ['40%', '70%'],
+            avoidLabelOverlap: false,
+            itemStyle: {
+                borderRadius: 10,
+                borderColor: '#fff',
+                borderWidth: 2
+            },
+            label: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    fontSize: '40',
+                    fontWeight: 'bold'
+                }
+            },
+            labelLine: {
+                show: false
+            },
+            data: [
+                {value: 18, name: '就业实现增收'},
+                {value: 12, name: '开展个体经营增收'},
+                {value: 65, name: '开展种养殖实现增收'},
+                {value: 5, name: '租赁、入股经营等形式实现增收'},
+            ]
+        }
+    ]
+};
+
+option && myChart.setOption(option);
+		</script>
+	 </div>
+	   <main>
+		   <article>
+			  <div class="datathree">
+				<p>数据来源：新华网</p>
+		 	 </div>
+		   </article>
+	   </main>
+	    
+    <footer class="foot">
+		<p>back to top</p>
+		<span><a href="#top"></a></span>
+		<p class="lastword">
+		Copyright  2021 版权所有 好好学习小组 <br>   
+		管理登陆Tel：0817--2568536(组办)0817--2568536(传真) <br>
+		好好学习小组的邮箱：2560389980@qq.com
+		</p>
+	</footer>
+    </body>
+</html>

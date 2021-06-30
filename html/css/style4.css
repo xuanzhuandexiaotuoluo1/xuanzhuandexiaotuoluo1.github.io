@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+        /*为网页设置大小和字体*/
+        html,body{padding: 0px;
+		  margin: 0px;
+		  font-family: "kaiti";}
+		*{box-sizing: border-box;}
+		html{overflow: hidden;}
+		body{overflow-x: hidden;
+			overflow-y: auto;
+			height: 100vh;
+			perspective: 1px;
+			transform-style: preserve-3d;
+		    background-color: white;}
+        /*导航栏相关内容*/
+       nav{padding-top: 1em;
+		background:rgba(192,192,192,.6);
+		width: 100vw;
+		height: 10vh;
+	
+		}
+ 		.tittle{float: left
+		}
+		nav li{display:inline-block;
+				float:right;
+				/*background-color: aqua;*/
+				margin: 0 0.5em;
+				text-align: center;
+			 	/*line-height: 8em;*/
+				list-style: none;
+				font-size: 1.5em;
+		
+				 }
+		a{text-decoration: none;
+			color: white;
+			
+		}
+		a:hover{text-decoration: underline;
+		}
+		 ul li:nth-child(1){padding-right: 4em;
+	
+		}
+		.tittle{font-size: 2em;
+				color: white;
+				line-height: 10vh;
+				padding-left: 2em;
+			font-family:Microsoft-YaHe;
+		}
+        /*设置时差滚动的相关内容*/
+		header:before{content: "";
+			         display: block;
+			         background-image:url("../img/stfpbeijing.jpg");
+			         background-size: cover;
+			         position: absolute;
+			         left:0;
+			         top:0;
+			         right:0;
+			         bottom: 0;
+			         z-index:-1;
+			         transform-style: inherit;
+			         height: 100vh;
+			         transform: translateZ(-1px) scale(2);}
+        header{height: 100vh;
+				 width: 100vw;
+			     text-align: center;}
+         /*设置网页图片上的文字大小和位置*/
+		 header h1{color: white;
+		          font-size:5em;
+		          font-family: MicrosoftYahe;
+		          width: 100vw;
+		          padding-top: 0.5em;}
+		header h2{color: white;
+		         font-size:4em;
+		         font-family: MicrosoftYahe;
+		         width: 100vw;
+		         padding-top:-1em;}
+		header h3{color: white;
+				font-size:2em;
+		         font-family: MicrosoftYahe;
+		         width: 100vw;
+		         padding-top:1em;}
+        main{display: flex;
+			justify-content: center;
+			position: relative;
+			background-color:white;}
+       /*设置网页所用文章的字体和大小位置*/
+	    article{width: 60vw;
+			color: black;
+			font-size: 24px;
+			text-align: justify;
+			letter-spacing: 0.025em;
+			text-indent: 2em;
+			line-height: 1.5em;}
+		.text{margin-top: 2em;}
+        /*设置网页插入图片的位置和大小*/
+		.secondbackground{height: 60vh;
+							width: 100vw;
+							text-align: center;
+							background-image:url("../img/duorou.webp");
+							background-size: cover;}
+        /*设置网页插入图片上的文字大小*/
+		.secondbackground h2{padding-top: 3em;
+							font-size: 4em;
+							color: white;
+							font-family: Microsoft Yahe;}
+		.topic{font-size: 1.5em;
+			  letter-spacing: 10px;
+			  line-height:0;
+			  color:dodgerblue;
+			  text-align: center;}	
+        /*设置数据图来源的文字*/
+		.data{margin-left: 14em;
+			  font-size: 1em;}
+		.datatwo{margin-left: 14em;
+				font-size: 1em;
+				margin-top: -2em;}
+		.datathree{margin-left: 14em;
+				font-size: 1em;
+				margin-top: -3em;}
+        /*设置生态扶贫四条途径详细介绍的文字和数据图的位置*/
+        .partHuanjing{width: 70vw;
+				height: 70vh;
+				margin-left: 15em;}
+        .partXiufu{width: 75vw;
+				height: 98vh;
+				margin-left: 10em;}
+        .partBaohu{width: 70vw;
+					height: 63vh;
+				    margin-left: 15em;} 
+        .partLvyou{width: 70vw;
+				  height: 63vh;
+				  margin-left: 15em;}
+        span{font-family: 'icomoon';
+	         display: block;
+	         font-size: 3em;
+	         text-align: center;}
+        @font-face {font-family: 'icomoon';
+                   src:  url('../fonts/icomoon.eot');
+				   src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+					url('"../fonts/icomoon.ttf"') format('truetype'),
+					url('../fonts/icomoon.woff') format('woff'),
+					url('../fonts/icomoon.svg') format('svg');
+                    font-weight: normal;
+                    font-style: normal;
+                    font-display: block;}
+       /*设置网页页脚*/
+       .foot{width: 100%;
+			height: 30vh;
+			background: rgba(0,102,203,1);
+			margin-top: 1em;
+			padding-top: 1em;
+			color: white;
+			text-align:center;}
+      .thefoot{text-align: center;}
+      .lastword{margin-top: 1em;}
+        
