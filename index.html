@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>无标题文档</title>
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+	<!--这是-----------导航-------------开始-->
+	<div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="fa fa-home"></i></span>
+                        <span class="title">首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="html/201918340322-qinnian-1501.html">
+                        <span class="icon"><i class="fa fa-industry"></i></span>
+                        <span class="title">产业扶贫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="html/201918340326-sunshanshan-1502.html">
+                        <span class="icon"><i class="fa fa-handshake-o"></i></span>
+                        <span class="title">转移就业扶贫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="html/201918340324-raosha-1501.html">
+                        <span class="icon"><i class="fa fa-automobile"></i></span>
+                        <span class="title">易地搬迁扶贫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="html/201918340326-sunshanshan-1501.html">
+                        <span class="icon"><i class="fa fa-graduation-cap"></i></span>
+                        <span class="title">教育扶贫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="html/201906240226-yangjing-1501.html">
+                        <span class="icon"><i class="fa fa-envira"></i></span>
+                        <span class="title">生态扶贫</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle"></div>
+    </div>
+    <script>
+        const navigation = document.querySelector('.navigation');
+        document.querySelector('.toggle').onclick = function(){
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+	<header class="background" id="top">
+		<h1 class="tittle">聚焦脱贫攻坚战</h1>
+		<h3 class="last">Focus on the fight against poverty</h3>
+	</header>
+	<!--这是-----------导航-------------结束-->
+	<!--这是-----------介绍文字----------开始-->
+	<main>
+		<article class="first">
+			<p>
+			<b>近日，国家统计局公布的数据显示，中国脱贫攻坚成果举世瞩目，5575万农村贫困人口实现脱贫。</b>第一批脱贫攻坚普查结果显示，贫困户全部实现了“两不愁三保障”，即不愁吃不愁穿，义务教育、基本医疗、住房安全有保障，饮水安全也得到保障。</p>
+
+			<p>这是一个了不起的成绩。占世界五分之一人口、全球最大的发展中国家，创造出人类减贫史上的奇迹：改革开放40多年来，7.5亿人成功脱贫，对世界减贫贡献率超过70%，提前10年实现联合国2030年可持续发展议程减贫目标。
+			</p>
+			<p>“中国的减贫密码，用一句话概括就是：加强领导是根本、把握精准是要义、增加投入是保障、各方参与是合力、群众动力是基础。这些都是我们在波澜壮阔的脱贫攻坚实践中形成的有益经验。”国务院扶贫办负责人说。</p>
+			<p>现行标准下农村贫困人口全部脱贫，832个贫困县全部摘帽，绝对贫困现象历史性消除。贫困地区农民居民收入较快增长，2020年贫困人口较多的广西、四川、贵州、云南、甘肃、宁夏、新疆7个省(区)农村居民人均可支配收入名义增速均高于全国农村居民增速0.2个百分点至1.7个百分点。</p>
+			<p><b>经过8年持续奋斗，中国脱贫攻坚取得举世瞩目的伟大成就。然而，这并不意味着相关工作止步。我们还将继续努力奋斗！</b></p>
+			
+		</article>
+	</main>
+	<!--这是-----------介绍文字----------结束-->
+	<!--这是-----------第二张图片----------开始-->
+	<section class="secondbackground">
+		<h2>脱贫攻坚成果</h2>
+	</section>
+	<!--这是-----------第二张图片----------结束-->
+	<main>
+		<article>
+			<p class="firstp">
+			贫困人口连续较大规模减少,2013年至2016年我国现行本准下农村贫困人口由9899万人减少至4335万人。年均减少1391万人。
+			</p>
+			<div class="box">
+			<img class="thepoor" src="img/thepoor.png" alt="">
+			</div>
+		</article>
+	</main>
+	<p class="thefoot">数据来源：新华网</p>
+	<main>
+		<article>
+			<p class="secondp">
+			自脱贫攻坚战开始以来，国家通过各种各样的脱贫手段，我们取得了重大的成就，脱贫率从2013年的16.7%提高到2016年的22.2%，我国的全国脱贫率不断提高，贫困人口数不断降低。
+			</p>
+			<h3>脱贫率</h3>
+			 <div class="box" id="poorrate" style="height: 60vh;  width:60vw; margin: 0 auto"></div>
+		
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+      <script type="text/javascript">
+var dom = document.getElementById("poorrate");
+var myChart = echarts.init(dom);
+var app = {};
+
+var option;
+
+
+
+option = {
+    xAxis: {
+        type: 'category',
+        data: ['2013年', '2014年', '2015年', '2016年']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [0.167, 0.149, 0.206, 0.222],
+        type: 'line',
+        smooth: true
+    }]
+};
+
+if (option && typeof option === 'object') {
+    myChart.setOption(option);
+}
+	</script>
+		</article>
+	</main>
+	<p class="thefoots">数据来源：新华网</p>
+	<main>
+		<article>
+			<p class="thirdp">
+			贫困地区的农户基本公共服务明显改善，饮水更加方便了，交通f更加便捷了，有线电视与电话的覆盖率提高了，卫生环境也更加洁净了。
+			</p>
+			<div class="box">
+			<img class="farmerratio" src="img/famerratio.png" alt="">
+			</div>
+		</article>
+	</main>
+	<p class="thefoot">数据来源：新华网</p>
+	<footer class="foot">
+		<p>back to top</p>
+		<a href="#top"></a>
+		<p class="lastword">
+		Copyright © 2021 版权所有 好好学习小组 <br>   
+		管理登陆Tel：0817--2568536(组办)0817--2568536(传真) <br>
+		好好学习小组的邮箱：2560389980@qq.com
+		</p>
+	</footer>
+</body>
+</html>
