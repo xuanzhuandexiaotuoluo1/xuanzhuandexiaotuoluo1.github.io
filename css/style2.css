@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{padding: 0px;
+				  margin: 0px;
+				  font-family: "kaiti";
+			}
+		*{box-sizing: border-box;
+		}
+		html{overflow: hidden;	
+		}
+		body{overflow-x: hidden;
+			overflow-y: auto;
+			height: 100vh;
+			perspective: 1px;
+			transform-style: preserve-3d;
+			/*display: flex;*/
+  		  min-height: 100vh;
+		}
+footer a{font-family: 'icomoon';
+	display: block;
+	font-size: 3em;
+	text-align: center;
+	color:white;
+	}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+header{height: 100vh;
+		width: 100vw;
+		text-align: center;
+	}
+		header h1{
+		color: white;
+		font-size:5em;
+		font-family: MicrosoftYahe;
+		width: 100vw;
+		padding-top: 0.5em;
+		}
+header h3{
+		color: white;
+		font-size:2em;
+		font-family: MicrosoftYahe;
+		width: 100vw;
+		padding-top:1em;
+		}
+.first{margin-top: 2em;
+	}
+.tittle{padding-top: 2em;
+	text-align: center;
+	font-size: 5em;
+}
+.last{padding-top: 1.5em;
+	text-align: center;
+	font-size: 3.3em;
+}
+h1{text-align: center;
+			color: #3C549D;
+		}
+		h3{text-align: center;
+		}
+		header::before{content: "";
+			display: block;
+			background-image:url("../img/shouye.jpg");
+			background-size:cover;
+			position: absolute;
+			left:0;
+			top:0;
+			right:0;
+			bottom: 0;
+			z-index:-1;
+			transform-style: inherit;
+			height: 100vh;
+			transform: translateZ(-1px) scale(2);
+		}
+/*这是对这个页面布局-----main和article-------的定义
+----------开始------------
+*/
+		main{display: flex;
+			justify-content: center;
+			position: relative;
+			background-color:white;
+			}
+		/*p{margin-top:-1em;}*/
+		article{width: 60vw;
+			/*max-width: 960px;*/
+			/*padding: 1em 0;*/
+			color: black;
+			font-size: 24px;
+			text-align: justify;
+			letter-spacing: 0.025em;
+			text-indent: 2em;
+			line-height: 1.5em;
+		}
+/*这是对这个页面布局-----main和article-------的定义
+----------结束------------
+*/
+/*--------这是第二张图-------
+----------开始------------
+*/
+.secondbackground{height: 60vh;
+			width: 100vw;
+			text-align: center;
+			background-image:url("../img/shu.webp");
+			background-size: cover;
+		}
+		.secondbackground h2{padding-top: 3em;
+							font-size: 4em;
+							color: white;
+							font-family: Microsoft Yahe;
+		}
+/*--------这是第二张图-------
+----------结束------------
+*/
+/*这是-------------导航---------------开始*/
+.container{
+    position: fixed;
+}
+.container .navigation{
+    position: relative;
+    width: 7vw;
+    height: 70vh;
+    background:#FFFFFF;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.5s;
+	margin-top: 7em;
+}
+.container .navigation.active{
+    width: 300px;
+}
+.container .navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.container .navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+.container .navigation ul li:hover{
+    background: #efefef;
+}
+.container .navigation ul li a{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color:#000000;
+    font-weight: 500;
+}
+.container .navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 1em;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.container .navigation ul li a .icon .fa{
+    font-size: 24px;
+}
+.container .navigation ul li a .title{
+    position: relative;
+    display: block;
+    height: 13vh;
+    line-height: 13vh;
+    white-space: nowrap;
+	align-items: center;
+	margin-left: 3.1em;
+	margin-top: -1em;
+}
+.toggle{
+    position: absolute;
+    top: calc(50% - -1.5em);
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+    cursor: pointer;
+    border: 5px solid #000000;
+    border-radius: 50%;
+}
+.toggle::before{
+    content: '\f054';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+}
+.toggle.active::before{
+    content: '\f053';
+}
+
+.caption{font-size:40px;
+		 margin-left: 10vw;
+	margin-top: 150px;
+}
+/*这是-------------导航---------------结束*/
+.firstp{margin-top: 2em;	
+}
+.secondp{margin-top: 2em;	
+}
+.thirdp{margin-top: 2em;	
+}
+.thepoor{margin-top: 1.7em;
+	width:50vw;
+	height: 60vh;
+}
+.farmerratio{margin-top: 1.7em;
+	width:50vw;
+	height: 60vh;
+	}
+.box, #poorrate{text-align: center;
+}
+
+.foot{width: 100%;
+			height: 30vh;
+			background: rgba(0,102,203,1);
+			margin-top: 1em;
+			padding-top: 1em;
+			color: white;
+			text-align:center;
+		}
+.thefoot{text-align: center;
+}
+.thefoots{margin-top:-0.1em;
+		text-align: center;
+}
