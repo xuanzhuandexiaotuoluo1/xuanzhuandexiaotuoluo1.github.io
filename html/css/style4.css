@@ -64,11 +64,17 @@
 				 width: 100vw;
 			     text-align: center;}
          /*设置网页图片上的文字大小和位置*/
-		 header h1{color: white;
-		          font-size:5em;
-		          font-family: MicrosoftYahe;
-		          width: 100vw;
-		          padding-top: 0.5em;}
+		 header h1{/*background:rgba(0,0,0,.3);*/
+		color: white;
+		/*padding: 1em 3em;*/
+		font-size:5em;
+		font-family: MicrosoftYahe;
+		/*width: 100vw;*/
+		padding-top: 0.5em;
+		}
+		h1{text-align: center;
+			color: #3C549D;
+		}
 		header h2{color: white;
 		         font-size:4em;
 		         font-family: MicrosoftYahe;
